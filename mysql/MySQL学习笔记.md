@@ -75,6 +75,7 @@ CREATE TABLE user (
     password VARCHAR(20),
     PRIMARY KEY(id, name)
 );
+INSERT INTO user VALUES（1, 'Joe', '123')
 
 -- 自增约束
 -- 自增约束的主键由系统自动递增分配。
@@ -82,6 +83,8 @@ CREATE TABLE user (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(20)
 );
+
+INSERT INTO user (name) VALUES（'Joe')
 
 -- 添加主键约束
 -- 如果忘记设置主键，还可以通过SQL语句设置（两种方式）：
